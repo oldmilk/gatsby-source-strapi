@@ -52,7 +52,7 @@ const extractImage = async (image, ctx) => {
 
 const extractFields = async (item, ctx) => {
   if (isImage(item)) {
-    return extractImage(item, ctx);
+    return await extractImage(item, ctx);
   }
 
   if (Array.isArray(item)) {
